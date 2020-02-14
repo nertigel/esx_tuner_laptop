@@ -1,0 +1,35 @@
+.var-highlight{
+	color: #008ae6;
+}
+.string-highlight{
+	color: #008ae6;
+}
+
+#typewriter{
+	padding-top: 5px;
+	font-size: 10px;
+    color: #fff;
+	margin: 0;
+	overflow: hidden;
+	font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+
+		&:after{
+			content: "|";
+			animation: blink 500ms linear infinite alternate;
+		}
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}

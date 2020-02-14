@@ -1,0 +1,102 @@
+.monitor {
+    display:block;
+    background-image: url("tabletbg.png");
+    background-size: 103%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 5%;
+    left: 380px;
+    height:700px;
+    width:100%;
+    padding:0 !important;
+    z-index: 2;
+    user-select: none;
+}
+
+.monitor-brand {
+    display:block;
+    position:fixed;
+    text-align:center;
+    height:100%;
+    width:100%;
+    top:81%;
+    font-size:24px;
+    font-weight: 700;
+    font-family: "YaHei UI";
+    user-select: none;
+}
+
+.program {
+    display:block;
+    position:relative;
+    top: 108px;
+    left: 181.5px;
+    height: 440px;
+    width: 804px;
+    background-image: url("laptopscreenbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom:19px;
+    user-select: none;
+}
+
+.program-top-bar {
+    display:block;
+    padding-left:310px;
+    padding-right:10px;
+    padding-top:3px;
+    width:100%;
+    height:40px;
+    color:white;
+    background-image: linear-gradient(to bottom left, #2c070a, #b71c28);
+    font-family: roboto;
+    font-weight: 600;
+    font-size: 20px;
+    user-select: none;
+}
+
+.colbtns {
+    left: 440px;
+    bottom: 260px;
+    position: relative;
+    width: 140px;
+    z-index: 3;
+    user-select: none;
+    border-radius: 0px;
+}
+
+.colbtns:hover {
+    color: #fff;
+    background-color: #b71c28;
+    border-color: #b71c28;
+    user-select: none;
+}
+
+.colbtnd {
+    left: 620px;
+    bottom: 297px;
+    position: relative;
+    width: 140px;
+    z-index: 3;
+    user-select: none;
+}
+
+.ecutext-container {
+    background-color: #000000;
+    border-radius: 5px;
+    position: relative;
+    height: 235px;
+    width: 380px;
+    left: 413px;
+    bottom: 290px;
+    z-index: 1;
+    user-select: none;
+}
+
+.massbg {
+    background: none;
+    position: center;
+    left: 900px;
+}

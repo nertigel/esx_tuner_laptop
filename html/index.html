@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cd  njs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-darkness/jquery-ui.css" rel = "stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="textanim.css">
+        <link rel="stylesheet" type="text/css" href="custom.css">
+    </head>
+
+    <body class="massbg">
+        <div class="container monitor">
+            <div class="program">
+                <div class="fixed-top position-relative program-top-bar">
+                    <div class="row">
+                        <div class="col"><span id="appName">LS Customs</span></div>
+                        <div class="col text-right"><i class="fa fa-sm fa-times-circle" id="exitProgram"></i></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-6">
+                            <p class="boostpr">Turbo PSI <small class="text-muted">( 0PSI - 32 PSI )</small></p>
+                            <div class="slider" id="boost"></div><br>
+                            <p>Ignition Timing <small class="text-muted">( Retard - Advance )</small></p>
+                            <div class="slider" id="fuelmix"></div><br>
+                            <p>Transmission <small class="text-muted">( 1 - 5 )</small></p>
+                            <div class="slider" id="gearchange"></div><br>
+                            <p>Brake Force <small class="text-muted">( Rear / Front )</small></p>
+                            <div class="slider" id="braking"></div><br>
+                            <p>Drive Bias <small class="text-muted">( Rear / Front )</small></p>
+                            <div class="slider" id="drivetrain"></div>
+                        </div>
+
+                        <div class="col col-lg-6">
+                            <p>Brake Force <small class="text-muted">( Weak - Strong )</small></p>
+                            <div class="slider" id="brakeforce"></div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="ecutext-container">
+                        <pre id="typewriter">
+    <span class="var-highlight">Init</span> lmECU.exe
+    <span class="string">--------------------------------</span>
+    lmECU:\ <span class="string">validating engineer key</span>
+    lmECU:\ <span class="string">validation success</span>
+    lmECU:\ <span class="string">accessing sensors</span>
+    lmECU:\ <span class="string">parsing senslog.xml</span>
+    lmECU-senslog:\ <span class="string-highlight">running diagnostics</span>
+                    <span class="string-highlight"> 0 faults detected</span>
+    lmECU:\ <span class="string">applying modifications...</span>
+    lmECU:\ <span class="string">generating senslog.xml</span>
+    lmECU:\ <span class="string">parsing senslog.xml</span>
+    lmECU-senslog:\ <span class="string-highlight">running diagnostics</span>
+                    <span class="string-highlight"> 0 faults detected</span>
+    lmECU:\ <span class="string">ECU remap successful</span>
+    lmECU:\ <span class="string">end lmECU.exe</span>
+                            <br></br>
+                        </pre>
+                    </div>
+                    <div class="savebtn">
+                    <div class="colbtns"><button class="btn btn-success form-control" id="savebtn">SAVE</button></div>
+                </div>
+                <div class="colbtnd"><button class="btn btn-success form-control" id="defaultbtn">DEFAULT</button></div>
+            </div>
+        </div>
+
+        <script src="config.js"></script>
+        <script src="index.js"></script>
+        <script src="textanim.js"></script>
+    </body>
+</html>
