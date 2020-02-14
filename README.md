@@ -13,9 +13,9 @@
 - Import SQL file.
 - Place esx_tuner_laptop folder into resources folder.
 - ensure esx_tuner_laptop in server.cfg
+- If you're not using my version of esx_inventoryhud make sure you add `tuning_laptop` to `esx_inventoryhud\config.lua`, `Config.CloseUIItems`
 
 ### Instructions
 - Use `tuner_laptop` item, Modify to your liking and click `SAVE`.
 - To make it into default you could press on `DEFAULT` and then `SAVE`.
 - If you want to delete the a tune from a car that you're sitting in simply type `/untune`.
-- If you're not using my version of esx_inventoryhud make sure you add `tuning_laptop` to `esx_inventoryhud\config.lua`, `Config.CloseUIItems`
