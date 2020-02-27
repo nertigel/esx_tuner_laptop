@@ -11,8 +11,9 @@
 
 ## Installation
 - Import SQL file.
-- Place esx_tuner_laptop folder into resources folder.
-- ensure esx_tuner_laptop in server.cfg
+- Rename `esx_tuner_laptop` to `tunerchip`
+- Place tunerchip folder into resources folder.
+- ensure tunerchip in server.cfg
 - If you're not using my version of esx_inventoryhud make sure you add `tuning_laptop` to `esx_inventoryhud\config.lua`, `Config.CloseUIItems`
 
 ### Instructions
